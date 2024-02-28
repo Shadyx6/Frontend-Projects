@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay w-full h-full bg-black/60 absolute top-0 hidden">
+    </div>
+    <div class=" h-screen w-screen bg-white mainwrapper">
+        <div class=" flex nav text-xl text-black justify-between px-8 py-5">
+            <h2>Keep Track of your  Schedule.</h2>
+            <button class=" new px-5 py-3 bg-green-400 rounded-lg" >Make new Note</button>
+        </div>
+        <div class="notes px-10 py-7 flex flex-wrap gap-10 hidden">
+            <div class="container h-52 w-44 bg-red-500 rounded-lg flex flex-col gap-5 overflow-hidden  px-5 py-2">
+                <h2 class="title text-3xl">title</h2>
+                <h4>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, dolorem dicta. Soluta optio obcaecati ab. Nesciunt nam ipsa a recusandae, similique sint. Corrupti at magnam, dolorem in nihil veniam vero?</h4>
+            </div>
+        
+
+      
+    </div>
+    <div class="field h-96 w-5/12 bg-zinc-200 absolute inset-x-2/4 inset-y-2/4 px-5 py-5 flex flex-col gap-4 hidden overflow-hidden">
+        <h1 class="text-xl">Create new note</h1>
+        <textarea class="title mt-2 w-full h-10 resize-none py-2 px-5" placeholder="Title"></textarea>
+        <textarea class="bg-white w-full h-52 px-5 py-2 resize-none" placeholder="Details"></textarea>
+        <button class="submit px-2 py-2 bg-green-300 w-32 mt-2 rounded-lg">Save now</button>
+    </div>
+    <div class="empty overflow-hidden w-36 border-dashed border-gray-300 border-2 h-20 flex items-center px-3">
+        <h4 class="text-xl ">No notes yet</h4>
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

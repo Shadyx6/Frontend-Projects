@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="mainwrapper h-screen w-screen">
+      <div
+        class="section h-[35rem] w-[30vw] bg-blue-200 ml-[550px] mt-20 rounded-lg"
+      >
+        <form class="form flex px-10 py-10 gap-6">
+          <input
+            class="City h-10 px-2 -px-0"
+            type="search"
+            name="City"
+            placeholder="Search for any city "
+          />
+          <button
+            class="btn text-xl whitespace-nowrap bg-green-200 py-2 px-8 rounded-lg"
+            type="submit"
+          >
+            Get Weather
+          </button>
+        </form>
+        <div class="datacontainer h-[68%] w-[80%] bg-black ml-12 relative text-black overflow-hidden ">
+          <div class="top absolute top-0 left-0 ml-2 mt-2">
+            <h2 class="cityname opacity-0 text-3xl"></h2>
+            <div class="regiondiv opacity-0 flex items-center justify-items-center gap-1">
+              <i class="ri-time-zone-line"></i> <h2 class="timezone text-l" ></h2>
+            </div>
+          </div>
+          <div class="main px-40 py-32 text-black  flex flex-col items-center justify-items-center gap-3">
+            <h1 class="temp text-5xl whitespace-nowrap font-semibold"></h1>
+            <h2 class="desc whitespace-nowrap text-xl font-semibold"></h2>
+            <h3 class="aqi opacity-0 whitespace-nowrap px-4 py-2 font-medium rounded-2xl "></h3>
+          </div>
+          <div class="weather-icon absolute top-[7%] left-[80%] h-96">
+            <img class="weatherimage scale-0 object-cover opacity-0" src="/Day 4/Weather app/images/rainy.gif" alt="">
+        
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

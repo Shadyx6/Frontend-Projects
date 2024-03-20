@@ -1,0 +1,9 @@
+.datacontainer {
+  background-image: url('https://media.istockphoto.com/vectors/background-sky-with-clouds-vector-id678651806?k=6&m=678651806&s=612x612&w=0&h=onvuoQIn2WUsO4W5eLWHu91P4bBkbC1cWF_RtnoYu4I=');
+  background-position: center;
+  background-size: cover;
+}
+.mainwrapper{
+    background-color: #EEEEEE;
+    overflow: hidden;
+}
